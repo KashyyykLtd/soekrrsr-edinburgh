@@ -27,6 +27,12 @@ Until a file exists, the page shows a tidy dashed placeholder in its slot — no
 | `garden-cafe.jpg`    | Mon 14 · Loch Ness           | Garden Cafe, Pitlochry (breakfast)        |
 | `zs-bistro.jpg`      | Mon 14 · Loch Ness           | Z's Bistro, Dunkeld (dinner)              |
 | `aldi.jpg`           | Fri 11 · the big shop        | Aldi, Dalgety Bay (the middle aisle)      |
+| `stena-ferry.jpg`    | Fri 11 · the crossing        | Stena ferry, Belfast → Cairnryan          |
+| `giants.jpg`         | Weekend · hockey nights      | Belfast Giants (away)                     |
+| `everton-stadium.jpg`| Wed 16 · match night         | Everton, Hill Dickinson Stadium           |
+| `sissi-harbour.jpg`  | Crete week (wide, top)       | Sissi's little harbour                    |
+| `crete-sunset-dinner.jpg` | Crete week              | A waterfront dinner at golden hour        |
+| `spinalonga.jpg`     | Crete week                   | Spinalonga / an eastern-Crete day         |
 
 ## Rome, Barcelona & the Med (`rome-med.html`)
 
