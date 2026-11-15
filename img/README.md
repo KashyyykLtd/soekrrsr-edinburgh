@@ -44,7 +44,14 @@ Until a file exists, the page shows a tidy dashed placeholder in its slot — no
 | `rome-trevi.jpg`           | Rome gallery            | The Trevi Fountain                         |
 | `rome-trastevere.jpg`      | Rome gallery            | A Trastevere lane                          |
 | `barcelona.jpg`            | Rome → Barcelona (wide) | Barcelona — Sagrada Família or waterfront  |
-| `ship-resilient-lady.jpg`  | Cruise · sea day        | Resilient Lady / the pool deck             |
+| `ship-resilient-lady.jpg`  | Cruise hero + sea day   | Virgin Voyages Resilient Lady              |
+| `virgin-voyages-logo.png`  | Cruise · the badge      | Virgin Voyages logo (on a white chip)      |
+| `eat-wake.jpg`             | Onboard eats            | The Wake restaurant                        |
+| `eat-razzledazzle.jpg`     | Onboard eats            | Razzle Dazzle restaurant                   |
+| `eat-pinkagave.jpg`        | Onboard eats            | Pink Agave restaurant                      |
+| `eat-gunbae.jpg`           | Onboard eats            | Gunbae (Korean BBQ)                        |
+| `eat-extravirgin.jpg`      | Onboard eats            | Extra Virgin (Italian)                     |
+| `eat-testkitchen.jpg`      | Onboard eats            | The Test Kitchen                           |
 | `cannes.jpg`               | Shore · Mon 17          | Cannes / La Croisette                      |
 | `toulon.jpg`               | Shore · Tue 18          | Provence / Toulon                          |
 | `valencia.jpg`             | Shore · Thu 20          | Valencia / City of Arts & Sciences         |
