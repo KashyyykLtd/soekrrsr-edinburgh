@@ -114,6 +114,26 @@
   .rota .r .rr b{color:var(--foam);font-weight:600;font-size:15px}
   .rota .r .rr span{display:block;font-size:12.5px;color:var(--mist);margin-top:1px}
 
+  /* photos */
+  .photo{position:relative;aspect-ratio:3/2;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--harbour-2);margin:0;display:grid;place-items:center}
+  .photo.span{aspect-ratio:16/9;margin-top:14px}
+  .photo img{grid-area:1/1;width:100%;height:100%;object-fit:cover}
+  .photo figcaption{grid-area:1/1;align-self:end;z-index:2;width:100%;padding:10px 13px;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.04em;color:var(--foam);background:linear-gradient(transparent,rgba(15,35,48,.86))}
+  .photo.empty{border-style:dashed;border-color:var(--line-strong)}
+  .photo.empty img,.photo.empty figcaption{display:none}
+  .photo.empty::after{content:attr(data-empty);grid-area:1/1;font-family:"IBM Plex Mono",monospace;font-size:11px;line-height:1.6;color:var(--mist);text-align:center;padding:0 16px;letter-spacing:.02em}
+  .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+
+  /* shore days */
+  .shore{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+  .shoreday{background:var(--harbour-2);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+  .shoreday .photo{aspect-ratio:16/9;border:0;border-radius:0;border-bottom:1px solid var(--line)}
+  .shoreday .sd{padding:15px 17px 16px}
+  .shoreday .sd-when{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);margin-bottom:5px}
+  .shoreday h4{margin:0 0 6px;font-size:16px;font-weight:600;color:var(--foam)}
+  .shoreday p{margin:0;color:var(--mist);font-size:13.5px;line-height:1.5}
+  .shoreday p b{color:var(--foam);font-weight:600}
+
   footer{padding:40px 0 70px;border-top:1px solid var(--line);color:var(--mist);font-size:14px}
   footer a{color:var(--tide);text-decoration:none}
 
@@ -121,6 +141,8 @@
     .board{grid-template-columns:1fr}
     .cards{grid-template-columns:1fr}
     .hotels{grid-template-columns:1fr}
+    .pgrid{grid-template-columns:1fr}
+    .shore{grid-template-columns:1fr}
     .grid2{grid-template-columns:1fr}
     .compass{display:none}
   }
@@ -171,6 +193,14 @@
     <p class="s-sub">Fri 7 – Fri 15 May · eight days in the city, wide open. Both parties land at Fiumicino within the hour on the Friday morning — and it starts from there. A few seeds to draw out together.</p>
     <div class="note">✈ <b>Landing Fri 7:</b> Robert &amp; Suzanne on the easyJet direct from Belfast Int'l (EZY3003, 07:00 → 11:00); SO &amp; Emily overnight from Buffalo via New York, into Fiumicino ~10:10 — so everyone’s through arrivals inside the hour. <i>(Flights found, still to book.)</i></div>
     <p class="fineprint">✈ <b>Belfast options:</b> first choice is the <b>easyJet direct</b> on the 7th (EZY3003, BFS 07:00 → FCO 11:00, 3h). Backup if that moves — <b>BA via Heathrow</b>, <b>Sat 8 May</b> (BHD 09:35 → LHR 11:00, then BA556 12:50 → FCO 16:30) — but it lands a day later, so we'd trade a Rome night for it.</p>
+
+    <figure class="photo span" data-empty="▢ add img/rome-hero.jpg — a wide shot of Rome's rooftops"><img src="img/rome-hero.jpg" alt="Rome rooftops" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Rome — eight days, wide open</figcaption></figure>
+    <div class="pgrid">
+      <figure class="photo" data-empty="▢ add img/rome-colosseum.jpg — the Colosseum"><img src="img/rome-colosseum.jpg" alt="The Colosseum, Rome" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>The Colosseum</figcaption></figure>
+      <figure class="photo" data-empty="▢ add img/rome-vatican.jpg — St Peter's / the Vatican"><img src="img/rome-vatican.jpg" alt="St Peter's Basilica, Vatican City" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>St Peter's</figcaption></figure>
+      <figure class="photo" data-empty="▢ add img/rome-trevi.jpg — the Trevi Fountain"><img src="img/rome-trevi.jpg" alt="Trevi Fountain, Rome" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Trevi Fountain</figcaption></figure>
+      <figure class="photo" data-empty="▢ add img/rome-trastevere.jpg — a Trastevere lane"><img src="img/rome-trastevere.jpg" alt="Trastevere, Rome" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Trastevere</figcaption></figure>
+    </div>
     <div class="cards" style="margin-top:16px">
       <div class="card">
         <div class="tag">The ancient city</div>
@@ -278,6 +308,7 @@
         <p>Barcelona's a bit much to fall in love with in an evening — so a <b>couple of hours on the hop-on open-top bus</b> (Bus Turístic) does the job: Sagrada Família, Montjuïc, the waterfront, all from the top deck. Then tapas and an early night before boarding.</p>
       </div>
     </div>
+    <figure class="photo span" data-empty="▢ add img/barcelona.jpg — Barcelona (Sagrada Família or the waterfront)"><img src="img/barcelona.jpg" alt="Barcelona" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Barcelona — a couple of hours from the top deck</figcaption></figure>
     <div class="note">✈ Flights and the Barcelona night are still to book — a bed near the <b>World Trade Center / cruise port</b> makes Sunday's roll to the ship painless. See <b>Still to plan</b> below.</div>
   </div>
 </section>
@@ -330,6 +361,35 @@
         <p class="fineprint">⚓ Ports are set from the booking. <b>Shore Things &amp; dining</b> open on the Virgin app <b>16 Jan 2027</b> — that's when we lock in the Ibiza plans and any excursions.</p>
         <div class="note">🎧 <b>Ibiza night (Fri 21):</b> the whole point of the overnight — a proper <b>club night</b>, back aboard whenever. The big rooms are <b>Ushuaïa</b> &amp; <b>Hï</b> (Playa d'en Bossa, near the port), plus <b>Pacha</b>, <b>Amnesia</b> and <b>DC-10</b>. Line-ups and tickets for summer '27 won't drop until <b>early 2027</b> — so we watch the announcements, then pick the night's best set and book.</div>
         <div class="note">✈ <b>Home, Sun 23:</b> the ship’s in at 06:30, then both fly out of Barcelona — Robert &amp; Suzanne on the easyJet direct to Belfast (10:30 → 12:25), SO &amp; Emily back to Buffalo via New York, in at 18:54. <i>(Found, still to book.)</i></div>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Fraunces',serif;font-weight:600;font-size:21px;margin:34px 0 2px;letter-spacing:-.01em">Ashore — the gentle version</h3>
+    <p class="s-sub" style="margin:4px 0 0">No route marches. A relaxed idea for each day off the ship — do as much or as little as the mood allows.</p>
+    <div class="shore">
+      <div class="shoreday">
+        <figure class="photo" data-empty="▢ add img/cannes.jpg — Cannes / La Croisette"><img src="img/cannes.jpg" alt="Cannes, La Croisette" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Cannes · La Croisette</figcaption></figure>
+        <div class="sd"><div class="sd-when">Mon 17 · 09:00–21:00 · tender</div><h4>Cannes</h4><p>Amble <b>La Croisette</b>, coffee on the front, then up through <b>Le Suquet</b> old town for the view. Long lunch, an hour on the beach, tender back whenever — we're in till nine.</p></div>
+      </div>
+      <div class="shoreday">
+        <figure class="photo" data-empty="▢ add img/toulon.jpg — Provence / Toulon"><img src="img/toulon.jpg" alt="Toulon, Provence" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Provence · Toulon</figcaption></figure>
+        <div class="sd"><div class="sd-when">Tue 18 · 08:00–18:00</div><h4>Provence (Toulon)</h4><p>Easy does it — the <b>Mont Faron</b> cable car for the panorama, or just the <b>old town &amp; Provençal market</b>, rosé and seafood by the harbour. Prettier still: a short hop to <b>Sanary-sur-Mer</b>.</p></div>
+      </div>
+      <div class="shoreday">
+        <figure class="photo" data-empty="▢ add img/ship-resilient-lady.jpg — Resilient Lady / the pool deck"><img src="img/ship-resilient-lady.jpg" alt="Virgin Voyages Resilient Lady" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Resilient Lady · at sea</figcaption></figure>
+        <div class="sd"><div class="sd-when">Wed 19 · at sea</div><h4>Do nothing, gloriously</h4><p>The one day with nowhere to be — pool, the <b>thermal spa</b>, a sunbed and a book, <b>The Wake brunch</b>, maybe a massage. Bank the energy; Ibiza's next.</p></div>
+      </div>
+      <div class="shoreday">
+        <figure class="photo" data-empty="▢ add img/valencia.jpg — Valencia / City of Arts"><img src="img/valencia.jpg" alt="Valencia, City of Arts and Sciences" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Valencia · City of Arts</figcaption></figure>
+        <div class="sd"><div class="sd-when">Thu 20 · 08:00–17:00</div><h4>Valencia</h4><p>The <b>old town</b> and Central Market, <b>horchata &amp; fartons</b>, then the space-age <b>City of Arts &amp; Sciences</b>. It's the <b>home of paella</b> — so a proper one by the Turia gardens or out at Malvarrosa beach.</p></div>
+      </div>
+      <div class="shoreday">
+        <figure class="photo" data-empty="▢ add img/ibiza-daltvila.jpg — Ibiza / Dalt Vila at dusk"><img src="img/ibiza-daltvila.jpg" alt="Ibiza, Dalt Vila" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Ibiza · the overnight</figcaption></figure>
+        <div class="sd"><div class="sd-when">Fri 21 · in at 19:00 · overnight</div><h4>Ibiza — the big night</h4><p>Lazy day aboard, then in at seven. Dinner in town and <b>the club night</b> (see above) — back whenever, since we don't sail till tomorrow. The whole point of the overnight.</p></div>
+      </div>
+      <div class="shoreday">
+        <figure class="photo" data-empty="▢ add img/ibiza-beach.jpg — Ibiza / a beach club"><img src="img/ibiza-beach.jpg" alt="Ibiza beach" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Ibiza · the recovery</figcaption></figure>
+        <div class="sd"><div class="sd-when">Sat 22 · sail 17:00</div><h4>Ibiza — gentle recovery</h4><p>Surface slowly. A wander round <b>Dalt Vila</b>'s old walls, a long <b>beach-club lunch</b> (Talamanca or Playa d'en Bossa), toes in the sea — then back aboard by 16:00 before we sail at five.</p></div>
       </div>
     </div>
   </div>

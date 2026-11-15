@@ -28,6 +28,23 @@ Until a file exists, the page shows a tidy dashed placeholder in its slot — no
 | `zs-bistro.jpg`      | Mon 14 · Loch Ness           | Z's Bistro, Dunkeld (dinner)              |
 | `aldi.jpg`           | Fri 11 · the big shop        | Aldi, Dalgety Bay (the middle aisle)      |
 
+## Rome, Barcelona & the Med (`rome-med.html`)
+
+| Filename                   | Where it shows          | The shot                                   |
+|----------------------------|-------------------------|--------------------------------------------|
+| `rome-hero.jpg`            | Rome (wide, top)        | Rome rooftops / a wide city view           |
+| `rome-colosseum.jpg`       | Rome gallery            | The Colosseum                              |
+| `rome-vatican.jpg`         | Rome gallery            | St Peter's / the Vatican                   |
+| `rome-trevi.jpg`           | Rome gallery            | The Trevi Fountain                         |
+| `rome-trastevere.jpg`      | Rome gallery            | A Trastevere lane                          |
+| `barcelona.jpg`            | Rome → Barcelona (wide) | Barcelona — Sagrada Família or waterfront  |
+| `ship-resilient-lady.jpg`  | Cruise · sea day        | Resilient Lady / the pool deck             |
+| `cannes.jpg`               | Shore · Mon 17          | Cannes / La Croisette                      |
+| `toulon.jpg`               | Shore · Tue 18          | Provence / Toulon                          |
+| `valencia.jpg`             | Shore · Thu 20          | Valencia / City of Arts & Sciences         |
+| `ibiza-daltvila.jpg`       | Shore · Fri 21          | Ibiza / Dalt Vila old town at dusk         |
+| `ibiza-beach.jpg`          | Shore · Sat 22          | Ibiza / a beach club                       |
+
 Tips:
 - Landscape orientation works best (portrait shots get cropped to fit the frame).
 - Roughly 1200–1600px wide is plenty; keep them a few hundred KB so the page stays quick.
