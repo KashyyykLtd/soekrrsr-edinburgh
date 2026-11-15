@@ -231,6 +231,9 @@
   .photo.empty{border-style:dashed;border-color:var(--line-strong)}
   .photo.empty img,.photo.empty figcaption{display:none}
   .photo.empty::after{content:attr(data-empty);grid-area:1/1;font-family:"IBM Plex Mono",monospace;font-size:11.5px;line-height:1.6;color:var(--mist);text-align:center;padding:0 18px;letter-spacing:.02em}
+  .memgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+  .memgrid .photo{aspect-ratio:4/3;border-radius:12px}
+  @media (max-width:640px){ .memgrid{grid-template-columns:1fr 1fr} }
 
   /* ---- loch ness feature ---- */
   .nessie{margin-top:20px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--harbour-2)}
@@ -529,6 +532,37 @@
     </div>
   </div>
 </header>
+
+<!-- MEMORIES -->
+<section>
+  <div class="wrap">
+    <div class="s-head"><span class="s-num">✦</span><h2>Memories</h2></div>
+    <p class="s-sub">How it actually went — a few from the trip. Edinburgh in the long September light, then everyone on to Crete and the water.</p>
+
+    <p class="maybe-head">Edinburgh</p>
+    <div class="memgrid">
+      <figure class="photo"><img src="img/mem-ed-dinner.jpg" alt="Dinner up on Calton Hill" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Dinner up on Calton Hill</figcaption></figure>
+      <figure class="photo"><img src="img/mem-ed-castle.jpg" alt="Edinburgh Castle" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>The castle on the rock</figcaption></figure>
+      <figure class="photo"><img src="img/mem-ed-royalmile.jpg" alt="The Royal Mile" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Down the Royal Mile</figcaption></figure>
+      <figure class="photo"><img src="img/mem-ed-caltonhill.jpg" alt="Calton Hill" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Calton Hill across the rooftops</figcaption></figure>
+      <figure class="photo"><img src="img/mem-ed-balmoral.jpg" alt="The Balmoral clock at dusk" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>The Balmoral clock, at dusk</figcaption></figure>
+      <figure class="photo"><img src="img/mem-ed-calton-obelisk.jpg" alt="Calton Hill at blue hour" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Blue hour, Calton Hill</figcaption></figure>
+      <figure class="photo"><img src="img/mem-ed-northbridge.jpg" alt="North Bridge" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Under North Bridge</figcaption></figure>
+      <figure class="photo"><img src="img/mem-ed-princes-dusk.jpg" alt="Princes Street in the evening" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Princes Street, evening</figcaption></figure>
+      <figure class="photo"><img src="img/mem-ed-oldtown.jpg" alt="Old Town street" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Old Town stone</figcaption></figure>
+      <figure class="photo"><img src="img/mem-ed-walk.jpg" alt="Walking the city" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Across the city</figcaption></figure>
+    </div>
+
+    <p class="maybe-head">Crete</p>
+    <div class="memgrid">
+      <figure class="photo"><img src="img/mem-crete-couple.jpg" alt="By the water in Crete" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>By the water</figcaption></figure>
+      <figure class="photo"><img src="img/mem-crete-feast.jpg" alt="Breakfast with a sea view" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Breakfast with a sea view</figcaption></figure>
+      <figure class="photo"><img src="img/mem-crete-flag.jpg" alt="Sunset over the Aegean" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Sunset over the Aegean</figcaption></figure>
+      <figure class="photo"><img src="img/mem-crete-cat.jpg" alt="A local cat sunbathing" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>A local, sunbathing</figcaption></figure>
+      <figure class="photo"><img src="img/mem-crete-bar.jpg" alt="Shade and a long lunch by the sea" loading="lazy" onerror="this.closest('.photo').classList.add('empty')"><figcaption>Shade and a long lunch</figcaption></figure>
+    </div>
+  </div>
+</section>
 
 <!-- THU 10 -->
 <section class="reveal">
