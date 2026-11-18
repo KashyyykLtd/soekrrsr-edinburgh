@@ -21,3 +21,4 @@ Belfast Giants, Everton's ground, the Resilient Lady, etc.) are the group's own.
 - `virgin-voyages-logo.png` - Virgin Voyages logo - Virgin Group - trademark, used to identify the cruise line the group is sailing with
 - `eat-*.jpg` - Resilient Lady restaurant photos (The Wake, Pink Agave, Razzle Dazzle, Test Kitchen, Extra Virgin, Gunbae, The Galley, The Pizza Place) - the group's own / supplied by Robert
 - `rome-emma.jpg`, `rome-armando.jpg`, `rome-giggetto.jpg` - Rome restaurant photos supplied by Robert
+- `rome-flat-*.jpg` - The Vatican Terrace by Michele, from the Airbnb listing (screenshots supplied by Robert)
